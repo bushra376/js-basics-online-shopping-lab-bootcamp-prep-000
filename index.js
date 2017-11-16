@@ -15,7 +15,8 @@ function addToCart(item) {
  var purchasedItems = {};
  purchasedItems[item] = priceOfItem;
  console.log(`${item} has been added to your cart.`)
- return
+ setCart(purchasedItems);
+ return cart; 
  //{[item] : [priceOfItem]};
 }
 
